@@ -5,7 +5,7 @@ Reads the survey's public statistics page on LimeSurvey (country question only),
 ranking, and writes a small thank-you page with the chart into docs/. LimeSurvey sends
 participants to that page when they submit the survey.
 
-Runs every hour on GitHub (see .github/workflows/leaderboard.yml); nothing to do by hand.
+Runs every 15 minutes on GitHub (see .github/workflows/leaderboard.yml); nothing to do by hand.
 To try it on your own computer:   pip install matplotlib   then   python3 update_leaderboard.py
 """
 import datetime
@@ -22,7 +22,7 @@ LIMESURVEY       = os.environ.get("LIMESURVEY", "https://limesurvey.zhaw.ch")
 SURVEY_ID        = os.environ.get("SURVEY_ID", "746251")      # the ID LimeSurvey shows after import
 LANGUAGE         = "en"
 TOP_N            = 0      # bars in the chart; 0 = every country with MIN_PARTICIPANTS or more
-MIN_PARTICIPANTS = 3      # countries with fewer participants are not shown (anonymity)
+MIN_PARTICIPANTS = 1      # countries with fewer participants are not shown (anonymity)
 TERMS            = 10     # terms per participant, for the thank-you text
 OUT_DIR          = "docs"
 PAGE_TITLE       = "Plant-microbiome vocabulary challenge"
