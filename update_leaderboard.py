@@ -122,7 +122,7 @@ def write_page(stamp, path):
   <h1>Thank you, all %(terms)d terms are done.</h1>
   <div class="note">Your ratings now count for your country. You may close this window.</div>
   <img src="leaderboard.png?v=%(v)s" alt="Participants per country">
-  <p class="small">Countries with at least %(min)d participants. Last change: %(stamp)s UTC. Updated every hour.</p>
+  <p class="small">Countries with at least %(min)d participants. Last change: %(stamp)s UTC. Updated automatically every 15 minutes.</p>
 </main>
 </body>
 </html>
