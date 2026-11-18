@@ -2,7 +2,7 @@ name: Update country ranking
 
 on:
   schedule:
-    - cron: "23 * * * *"        # every hour, at minute 23
+    - cron: "*/15 * * * *"        # every hour, at minute 23
   workflow_dispatch:            # "Run workflow" button for a manual update
 
 permissions:
