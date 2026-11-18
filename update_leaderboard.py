@@ -19,7 +19,7 @@ from html.parser import HTMLParser
 
 # ---------------------------------------------------------------- settings
 LIMESURVEY       = os.environ.get("LIMESURVEY", "https://limesurvey.zhaw.ch")
-SURVEY_ID        = os.environ.get("SURVEY_ID", "746251")      # the ID LimeSurvey shows after import
+SURVEY_ID        = os.environ.get("SURVEY_ID", "915388")      # the ID LimeSurvey shows after import
 LANGUAGE         = "en"
 TOP_N            = 0      # bars in the chart; 0 = every country with MIN_PARTICIPANTS or more
 MIN_PARTICIPANTS = 1      # countries with fewer participants are not shown (anonymity)
